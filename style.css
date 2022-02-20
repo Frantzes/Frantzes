@@ -132,7 +132,10 @@ nav {
   #buttonbox {
     margin-top: 2em;
   }
+  #text {
+    font-size: 3em;
+  }
   #bg {
-    background-position-y: -1em;
+    background-position-y: -3em;
   }
 }
