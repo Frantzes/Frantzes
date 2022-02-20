@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Jost", sans-serif;
+}
+
+.navbar,
+nav {
+  height: auto;
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+}
+.navbar-nav {
+  margin-top: 1em;
+}
+
+.navbar-nav a {
+  text-align: center;
+  border-bottom: 1px solid ivory;
+}
+
+.navbar-nav a:hover {
+  border-bottom: 1px solid #ffd700;
+}
+
+.wrapper {
+  flex: auto;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: auto;
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(13, 13, 13);
+  scroll-snap-align: end;
+}
+
+img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  justify-content: center;
+}
+
+iframe {
+  max-width: 100%;
+  height: 80px;
+}
+
+.spotify {
+  margin-top: 5em;
+}
+
+section {
+  background-color: rgb(13, 13, 13);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: end;
+  height: 100%;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+.wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  img {
+    height: 85vh;
+    width: auto;
+  }
+
+  .spotify,
+  iframe {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    margin: 0%;
+  }
+
+  .navbar nav {
+    padding-left: 2em;
+  }
+
+  .navbar-nav {
+    margin-top: 0;
+  }
+
+  .navbar-nav a {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+  nav a {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .navbar-nav a:hover {
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1081px) {
+  img {
+    width: 100%;
+    padding-bottom: 2.5em;
+    height: auto;
+  }
+}

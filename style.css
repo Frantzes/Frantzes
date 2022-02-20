@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-height: 100vh;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.navbar,
+nav {
+  height: auto;
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+}
+.navbar-nav {
+  margin-top: 1em;
+}
+
+.navbar-nav a {
+  text-align: center;
+  border-bottom: 1px solid ivory;
+}
+
+.navbar-nav a:hover {
+  border-bottom: 1px solid #ffd700;
+}
+
+#bg {
+  flex: auto;
+  background-image: url(HomePic.jpg);
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position-x: -6em;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: rgb(13, 13, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 1em;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#text {
+  font-family: "Jost", sans-serif;
+  color: ivory;
+  text-align: center;
+  font-size: clamp(3.5rem, 2.5vw, 4rem);
+  max-width: 80%;
+  line-height: 100%;
+}
+
+#buttonbox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fa {
+  color: ivory;
+  background-color: rgba(0, 0, 0, 0.541);
+  padding: 20px;
+  font-size: 30px;
+  width: 72px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1pt ivory;
+  margin: 10px;
+}
+
+.fa:hover {
+  color: rgb(13, 13, 13);
+  background-color: ivory;
+  box-shadow: 0 0 0 0pt ivory;
+}
+
+@media only screen and (min-width: 768px) {
+  #bg {
+    background-size: contain;
+    background-position: center;
+    width: auto;
+    height: 93vh;
+  }
+
+  #text {
+    font-size: 7rem;
+  }
+
+  .navbar nav {
+    padding-left: 2em;
+  }
+
+  .navbar-nav {
+    margin-top: 0;
+  }
+
+  .navbar-nav a {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+  nav a {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .navbar-nav a:hover {
+    border: none;
+  }
+}
+@media only screen and (max-height: 670px) {
+  #text,
+  #buttonbox {
+    margin-top: 2em;
+  }
+  #bg {
+    background-position-y: -1em;
+  }
+}
