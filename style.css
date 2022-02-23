@@ -48,8 +48,11 @@ nav {
   justify-content: center;
 }
 
+.wrapper {
+  margin-top: 30%;
+}
+
 .container {
-  margin-top: 1em;
   display: flex;
   width: 100%;
   align-items: center;
@@ -63,14 +66,6 @@ nav {
   font-size: clamp(3.5rem, 2.5vw, 4rem);
   max-width: 80%;
   line-height: 100%;
-}
-
-#buttonbox {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .fa {
@@ -104,6 +99,9 @@ nav {
     font-size: 7rem;
   }
 
+  .wrapper {
+    margin-top: 12em;
+  }
   .navbar nav {
     padding-left: 2em;
   }
@@ -127,15 +125,17 @@ nav {
     border: none;
   }
 }
-@media only screen and (max-height: 670px) {
-  #text,
-  #buttonbox {
-    margin-top: 2em;
+
+@media only screen and (max-height: 770px) {
+  .wrapper {
+    margin-top: 50%;
   }
+
   #text {
     font-size: 3em;
   }
+
   #bg {
-    background-position-y: -3em;
+    background-position-y: -1em;
   }
 }
